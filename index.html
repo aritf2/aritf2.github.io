@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Efficiency Narrative</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="page-container">
+  <h1>Vehicle Efficiency in the US Has Been Improving Over Time</h1>
+  <div id="controls">
+    <button id="scene1" class="active">MPG Distribution ↗</button>
+    <button id="scene2">Combined MPG Trend ↗</button>
+    <button id="scene3">CO₂ Emissions ↘</button>
+    <button id="scene4">Guzzler Trend Change ↘</button>
+  </div>
+  <div id="vis-container">
+    <canvas id="vis-canvas"></canvas>
+    <svg id="vis-svg"></svg>
+  </div>
+  <div id="annotation"><p>Click a scene button to begin.</p></div>
+  <div id="navigation-controls">
+    <button id="prev-scene">◄ Previous Scene</button>
+    <button id="next-scene">Next Scene ►</button>
+  </div>
+</div>
+<div id="tooltip"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
